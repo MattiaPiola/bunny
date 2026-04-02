@@ -1,0 +1,28 @@
+{
+  "name": "bunny",
+  "version": "1.0.0",
+  "description": "Chat con il Coniglio Pasquale — supporto caccia al tesoro di Pasqua",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattiaPiola/bunny.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MattiaPiola/bunny/issues"
+  },
+  "homepage": "https://github.com/MattiaPiola/bunny#readme",
+  "devDependencies": {
+    "jest": "^30.3.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
