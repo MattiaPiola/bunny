@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🐰 Coniglio Pasquale — Caccia al Tesoro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="chat-header">
+      <div class="header-avatar">🐰</div>
+      <div class="header-info">
+        <h1 class="header-title">Coniglio Pasquale</h1>
+        <p class="header-subtitle">Caccia al Tesoro di Pasqua 🥚🌸</p>
+      </div>
+    </header>
+
+    <!-- Chat messages -->
+    <main class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-label="Messaggi della chat">
+      <!-- messages injected by JS -->
+    </main>
+
+    <!-- Input area -->
+    <footer class="chat-input-area">
+      <form class="chat-form" id="chatForm" autocomplete="off">
+        <input
+          type="text"
+          id="messageInput"
+          class="chat-input"
+          placeholder="Scrivi un messaggio…"
+          aria-label="Scrivi il tuo messaggio"
+          maxlength="500"
+          autofocus
+        />
+        <button type="submit" class="chat-send" aria-label="Invia messaggio">
+          <span class="send-icon">➤</span>
+        </button>
+      </form>
+      <div class="quick-actions" id="quickActions">
+        <button class="quick-btn" data-msg="Ciao!">👋 Ciao!</button>
+        <button class="quick-btn" data-msg="Aiuto">❓ Aiuto</button>
+        <button class="quick-btn quick-red" data-msg="Squadra Rossa">🔴 Rossa</button>
+        <button class="quick-btn quick-yellow" data-msg="Squadra Gialla">🟡 Gialla</button>
+        <button class="quick-btn" data-msg="Abbiamo trovato l'indizio!">🥚 Trovato!</button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
